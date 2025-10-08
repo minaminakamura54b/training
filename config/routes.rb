@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :microposts
   resources :users
   root 'home#top'
   get 'home/login', to: 'home#login', as: 'home_login'
